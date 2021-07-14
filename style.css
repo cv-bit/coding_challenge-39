@@ -1,0 +1,68 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: orangered;
+}
+
+.container{
+    border: 5px solid yellow;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    animation: thing 5s cubic-bezier(.5, .25, 1, .25) infinite;
+}
+
+.container2{
+    border: 5px solid yellow;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    transform: rotate(45deg);
+    animation: thing 5s cubic-bezier(.5, .25, 1, .25) infinite;
+}
+
+.container3{
+    border: 5px solid yellow;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    transform: rotate(20deg);
+    animation: thing 5s cubic-bezier(.5, .25, 1, .25) infinite;
+}
+
+.container4{
+    border: 5px solid yellow;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    transform: rotate(70deg);
+    animation: thing 5s cubic-bezier(.5, .25, 1, .25) infinite;
+}
+
+.thing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    border: 10px solid transparent;
+    border-color: darkslategray transparent transparent black;
+    border-radius: 50%;
+    animation: thing 10s cubic-bezier(0.35, -0.14, 0.79, 1.22) infinite;
+}
+
+@keyframes thing {
+    100% {
+        transform: rotateZ(1turn);
+    }
+}
